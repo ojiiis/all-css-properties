@@ -1,1 +1,23 @@
+<html>
+ <body>
+         <div id="css">
+          </div>
+ <script>
+  (async ()=>{               
+  const req = fetch("./c.json"); 
+  const res = req.json();
+  var t = `<table>
+  <thead>
+  <th>Properties</th> <th>Usage</th>
+  </thead>
+  <tbody>`;    
+    res.forEach((i,item)=>{
+    t += `<tr><td>${i}</td>
+    <td>${item}</td>
+    </tr>`;  
+  });
+  )();
+ </body>
+   </html>
 
+                                                                                                              
